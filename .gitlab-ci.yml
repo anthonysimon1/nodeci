@@ -1,15 +1,15 @@
 image: node:latest
 # On déclare une image de base ici une image contenant la derniere version de Nodejs
-​
+
 cache:
   paths:
     - node_modules/
 # On ajoute un cache qui indique les fichiers qui doivent être sauvegarder.
-​
+
 stages:
   - test
 # On définie les différents processus qui seront exécuter
-​
+
 testing_testing:
   stage: test
   script:
